@@ -133,3 +133,13 @@ section {
 		background-color: black;
 	}
 }
+
+.social-container {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+
+	img {
+		cursor: pointer;
+	}
+}

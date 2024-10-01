@@ -12,7 +12,7 @@
 			<h1>Van Truong</h1>
 			<ul class="nav-links">
 				<li><a href="#about">About</a></li>
-				<li><a href="#services">Experience</a></li>
+				<li><a href="#experience">Experience</a></li>
 				<li><a href="#quote">Projects</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
@@ -34,34 +34,45 @@
 				</div>
 				<div class="btn-container">
 					<button class="resume-btn">Download Resume</button>
-					<button class="contact-btn">Contact Me</button>
+					<button class="contact-btn" onclick="location.href='#contact'">
+						Contact Me
+					</button>
 				</div>
-				<div>
+				<div class="social-container">
 					<img
 						src="./assets/icons/linkedin.svg"
 						width="48"
 						height="48"
-						alt="linkedin icon"
+						alt="LinkedIn profile"
+						onclick="window.open('https://www.linkedin.com/in/vdtruong/', '_blank')"
 					/>
 					<img
 						src="./assets/icons/github.svg"
 						width="48"
 						height="48"
-						alt="github icon"
+						alt="Github profile"
+						onclick="window.open('https://github.com/vtruo009', '_blank')"
 					/>
 				</div>
 			</div>
 		</section>
 
+		<!-- About -->
+		<section id="about">
+			<div>
+				<h1>About</h1>
+			</div>
+		</section>
+
 		<!-- Experience -->
-		<section>
+		<section id="experience">
 			<div>
 				<h1>Experience</h1>
 			</div>
 		</section>
 
 		<!-- Contact -->
-		<section>
+		<section id="contact">
 			<div>
 				<h1>Contact</h1>
 			</div>
