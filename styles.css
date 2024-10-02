@@ -60,7 +60,6 @@ section {
 
 p {
 	color: rgb(85, 85, 85);
-	font-weight: 600;
 }
 
 #experience,
@@ -105,8 +104,13 @@ p {
 	margin: auto 0;
 }
 
+.intro-p1 {
+	font-weight: 600;
+}
+
 .intro-p2 {
 	font-size: 1.75rem;
+	font-weight: 600;
 }
 
 .btn-container {
@@ -241,4 +245,14 @@ article {
 	gap: 0.5rem;
 	margin: 0.5rem;
 	cursor: pointer;
+}
+
+/* Footer */
+footer {
+	height: 26vh;
+	margin: 0 1rem;
+
+	p {
+		text-align: center;
+	}
 }
