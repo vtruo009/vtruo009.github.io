@@ -55,10 +55,26 @@ section {
 	margin: 0 10rem;
 	box-sizing: border-box;
 	min-height: fit-content;
+	position: relative;
 }
 
-.section-container {
-	display: flex;
+p {
+	color: rgb(85, 85, 85);
+	font-weight: 600;
+}
+
+#experience,
+#projects,
+#contact {
+	text-align: center;
+
+	p {
+		font-size: 1rem;
+	}
+}
+
+.title {
+	font-size: 3rem;
 }
 
 /* Profile */
@@ -87,14 +103,6 @@ section {
 .profile-details-container {
 	gap: 1rem;
 	margin: auto 0;
-}
-.intro p {
-	color: rgb(85, 85, 85);
-	font-weight: 600;
-}
-
-.title {
-	font-size: 3rem;
 }
 
 .intro-p2 {
@@ -142,4 +150,55 @@ section {
 	img {
 		cursor: pointer;
 	}
+}
+
+/* Experience */
+
+.experience-container {
+	display: flex;
+	justify-content: space-evenly;
+	gap: 3rem;
+	margin-top: 2rem;
+}
+
+.details-container {
+	background-color: white;
+	border: 1px solid rgb(163, 163, 163);
+	border-radius: 2rem;
+	padding: 1.5rem;
+	flex: 1;
+}
+
+.experience-sub-title {
+	color: rgb(85, 85, 85);
+	font-size: 1.75rem;
+	font-weight: 600;
+	margin-bottom: 2rem;
+}
+
+.article-container {
+	display: flex;
+	text-align: initial;
+	flex-wrap: wrap;
+	flex-direction: row;
+	gap: 2.5rem;
+	justify-content: space-around;
+}
+
+article {
+	display: flex;
+	width: 10.5rem;
+	gap: 0.5rem;
+
+	.icon {
+		width: 36px;
+		height: 36px;
+	}
+}
+
+.arrow {
+	position: absolute;
+	right: -5rem;
+	bottom: 2.5rem;
+	cursor: pointer;
 }
