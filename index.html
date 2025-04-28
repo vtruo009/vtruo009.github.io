@@ -15,7 +15,7 @@
 					<li id="experiences"><a href="#experiences">Experiences</a></li>
 					<li id="project"><a href="#projects">Projects</a></li>
 					<button
-						class="contact-btn"
+						class="btn contact-btn"
 						onclick='window.alert("contact vandtruong414")'
 					>
 						<li id="contact">Contact</li>
@@ -26,22 +26,44 @@
 
 		<section id="about-section">
 			<div class="about-container">
-				<div id="profile-pic">
+				<div class="profile-pic">
 					<div class="background"></div>
-					<img src="./assets/images/profile.jpg" />
+					<!-- <img src="./assets/images/profile.jpg" /> -->
 				</div>
-				<div id="profile-info">
+				<div class="profile-info">
 					<h2>Hello! 👋</h2>
 					<p>
 						I'm Van. I'm a Web & Mobile Developer looking for exciting projects
 						to work on.
 					</p>
+					<div class="profile-links">
+						<button
+							class="btn profile-btn-outline"
+							onclick="window.open('https:\/\/drive.google.com/file/d/11_y89Yj197R0XmXklWbAot5QyiReDodz/view?usp=sharing', 'blank')"
+						>
+							Resume
+						</button>
+						<img
+							src="./assets/icons/linkedin.png"
+							width="48"
+							height="48"
+							alt="LinkedIn profile"
+							onclick="window.open('https:\/\/www.linkedin.com/in/vdtruong/', '_blank')"
+						/>
+						<img
+							src="./assets/icons/github.png"
+							width="48"
+							height="48"
+							alt="Github profile"
+							onclick="window.open('https:\/\/github.com/vtruo009', '_blank')"
+						/>
+					</div>
 				</div>
 			</div>
 		</section>
 
 		<script src="main.js"></script>
 		<script src="https://unpkg.com/lucide@latest"></script>
-		<script src="https://cdn.simpleicons.org/react"></script>
+		<script src="https://cdn.simpleicons.org"></script>
 	</body>
 </html>
