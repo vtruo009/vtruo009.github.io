@@ -1,1 +1,12 @@
 @import 'tailwindcss';
+
+@theme {
+    --color-sea-salt: #f8f8f8;
+    --color-atomic-tangerine: #f39c6b;
+    --color-gray-30: #e7e3e04d:
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
