@@ -33,6 +33,19 @@ body {
 	transition: all 300ms ease;
 }
 
+.section-title {
+	text-align: center;
+	padding: 2rem 0;
+
+	p {
+		font-size: 24px;
+	}
+
+	h2 {
+		font-size: 64px;
+	}
+}
+
 /************************ Desktop Navbar ************************/
 #desktop-nav {
 	display: flex;
@@ -77,8 +90,10 @@ body {
 }
 
 /************************ About Section ************************/
-#about-section {
-	padding: 8rem 0;
+#about-section,
+#experiences-section {
+	height: 100vh;
+	padding: 8rem 0 0;
 }
 
 .about-container {
@@ -161,5 +176,43 @@ body {
 	&:hover {
 		color: white;
 		background-color: rgb(53, 53, 53);
+	}
+}
+
+/************************ Projects Section ************************/
+.tech-stack-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	column-gap: 2rem;
+	text-align: center;
+}
+
+.tech-stack {
+	width: 100%;
+	height: 100%;
+	background-color: var(--secondary-color-30);
+	padding: 2rem;
+}
+
+.tech-icon {
+	width: 40px;
+	height: 40px;
+}
+
+.icon-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+}
+
+.tool {
+	span {
+		vertical-align: middle;
+	}
+
+	p {
+		display: inline;
 	}
 }
