@@ -52,10 +52,10 @@ body {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-}
 
-.logo {
-	font-size: 32px;
+	.logo {
+		font-size: 32px;
+	}
 }
 
 .nav-items {
