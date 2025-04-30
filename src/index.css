@@ -1,17 +1,26 @@
 @import 'tailwindcss';
 
 @theme {
-    --color-sea-salt: #f8f8f8;
-    --color-atomic-tangerine: #f39c6b;
-    --color-gray-30: #e7e3e04d:
-    --font-poppins: 'Poppins', sans-serif;
+	--color-sea-salt: #f8f8f8;
+	--color-atomic-tangerine: #f39c6b;
+	--color-gray-30: #e7e3e080;
+	--font-poppins: 'Poppins', sans-serif;
 }
 
 html {
-    scroll-behavior: smooth;
-    background-color: var(--color-sea-salt);
+	scroll-behavior: smooth;
+	background-color: var(--color-sea-salt);
 }
 
 button {
-    cursor: pointer;
+	cursor: pointer;
+}
+
+.skill-icon {
+	width: 4rem;
+	height: 4rem;
+
+	&:hover {
+		fill: var(--color-atomic-tangerine);
+	}
 }

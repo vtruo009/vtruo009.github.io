@@ -1,15 +1,16 @@
 import Header from './components/Header';
 import Section from './components/Section';
+import SkillCard from './components/SkillCard';
 
 const App = () => {
 	return (
 		<>
 			<Header />
 			<main className='min-h-screen bg-sea-salt'>
-				<Section sectionId='about' className='flex items-center gap-12'>
+				<Section sectionId='about' className='flex items-center gap-11'>
 					<div className='px-12 shrink-0'>
 						<img
-							src='/assets/images/profile.jpg'
+							src='src/assets/images/profile.jpg'
 							className='w-[200px] h-[200px] object-cover rounded-full md:w-[400px] md:h-[400px]'
 						/>
 					</div>
@@ -29,16 +30,30 @@ const App = () => {
 								Resume
 							</button>
 							<a href='https://www.linkedin.com/in/vdtruong/' target='_blank'>
-								<img src='/assets/icons/linkedin.png' />
+								<img src='src/assets/icons/linkedin.png' />
 							</a>
 							<a href='https://github.com/vtruo009' target='_blank'>
-								<img src='/assets/icons/github.png' />
+								<img src='src/assets/icons/github.png' />
 							</a>
 						</div>
 					</div>
 				</Section>
-				<Section sectionId='skills'>Skills</Section>
-				<Section sectionId='projects'>Projects</Section>
+
+				<Section
+					sectionId='skills'
+					className='text-center py-16'
+					title='tech stack'
+					subtitle='my go to'
+				>
+					<div className='w-[50vw] mt-10 mx-auto py-16 bg-gray-30 rounded-3xl'>
+						<SkillCard />
+					</div>
+				</Section>
+
+				<Section sectionId='projects' className='text-center'>
+					<p className='text-lg text-gray-500'>Browse My Past</p>
+					<h2 className='text-6xl'>Projects</h2>
+				</Section>
 				<p>Tentative: contact me section or a popup</p>
 			</main>
 			<p>Footer</p>
