@@ -2,9 +2,12 @@ import { NAV_ITEMS } from '../lib/constants';
 
 const NavItems = () => {
 	return (
-		<div className='flex justify-evenly items-center px-4'>
+		<div className='flex justify-evenly items-center gap-x-10'>
 			{NAV_ITEMS.map((item) => (
-				<li key={item} className='p-4 capitalize text-2xl'>
+				<li
+					key={item}
+					className='capitalize text-2xl py-2 hover:underline hover:underline-offset-8'
+				>
 					<a href={`#${item}`}>{item}</a>
 				</li>
 			))}
@@ -25,13 +28,13 @@ const ContactButton = () => {
 
 const Header = () => {
 	return (
-		<header>
-			<nav className='flex items-center justify-between'>
+		<header className='absolute w-full pt-10 px-32'>
+			<nav className='flex justify-between items-center'>
 				<a href='/' className='text-4xl'>
 					Van Truong
 				</a>
 
-				<ul className='flex justify-evenly items-center'>
+				<ul className='flex justify-evenly items-center gap-x-10'>
 					<NavItems />
 					<ContactButton />
 				</ul>
