@@ -28,10 +28,10 @@ const App = () => {
 							<button className='flex items-center font-semibold bg-transparent border-2 rounded-full py-2 px-5 text-xl hover:text-sea-salt hover:bg-black transition-colors duration-200 ease-in'>
 								Resume
 							</button>
-							<a>
+							<a href='https://www.linkedin.com/in/vdtruong/' target='_blank'>
 								<img src='/assets/icons/linkedin.png' />
 							</a>
-							<a>
+							<a href='https://github.com/vtruo009' target='_blank'>
 								<img src='/assets/icons/github.png' />
 							</a>
 						</div>
