@@ -28,7 +28,7 @@ const ContactButton = () => {
 
 const Header = () => {
 	return (
-		<header className='absolute w-full pt-10 px-32'>
+		<header className='w-global p-10 mt-4 mx-auto rounded-t-3xl bg-gray-30'>
 			<nav className='flex justify-between items-center'>
 				<a href='/' className='text-4xl'>
 					Van Truong
