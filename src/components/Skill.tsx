@@ -1,7 +1,7 @@
 import StackIcon from 'tech-stack-icons';
 import { SKILLS } from '../lib/constants';
 
-const SkillCard = () => {
+const Skill = () => {
 	return (
 		<div className='grid grid-cols-4 gap-y-10'>
 			{SKILLS.map((skill) => (
@@ -18,4 +18,4 @@ const SkillCard = () => {
 	);
 };
 
-export default SkillCard;
+export default Skill;
