@@ -17,6 +17,12 @@ button {
 	cursor: pointer;
 }
 
+.section-container {
+	height: 100vh;
+	text-align: center;
+	padding: 4rem 0;
+}
+
 .skill-icon {
 	width: 4rem;
 	height: 4rem;

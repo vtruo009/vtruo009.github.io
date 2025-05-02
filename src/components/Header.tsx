@@ -1,9 +1,9 @@
-import { NAV_ITEMS } from '../lib/constants';
+import { NAV_ITEMS } from '../lib/mixins';
 
 const NavItems = () => {
 	return (
 		<div className='flex justify-evenly items-center gap-x-10'>
-			{NAV_ITEMS.map((item) => (
+			{Object.values(NAV_ITEMS).map((item) => (
 				<li
 					key={item}
 					className='capitalize text-2xl py-2 hover:underline hover:underline-offset-8'

@@ -1,7 +1,8 @@
 import Header from './components/Header';
 import ProjectCard from './components/ProjectCard';
 import Section from './components/Section';
-import Skill from './components/Skill';
+import SkillCard from './components/SkillCard';
+import { PROJECTS } from './lib/constants';
 
 const App = () => {
 	return (
@@ -45,26 +46,30 @@ const App = () => {
 
 				<Section
 					sectionId='skills'
-					className='h-screen text-center py-16'
+					className='section-container'
 					title='tech stack'
 					subtitle='my go to'
 				>
 					<div className='max-w-[756px] mt-10 mx-auto py-16 bg-gray-30 rounded-3xl'>
-						<Skill />
+						<SkillCard />
 					</div>
 				</Section>
 
 				<Section
 					sectionId='projects'
-					className='h-screen text-center'
+					className='section-container'
 					title='projects'
 					subtitle='browse my past'
 				>
-					<ProjectCard />
+					<div className='flex gap-x-4'>
+						{PROJECTS.map((project) => (
+							<ProjectCard project={project} />
+						))}
+					</div>
 				</Section>
-				<p>Tentative: contact me section or a popup</p>
 			</main>
-			<p>Footer</p>
+			{/* <p>Tentative: contact me section or a popup</p> */}
+			{/* <p>Footer</p> */}
 		</>
 	);
 };
