@@ -4,6 +4,7 @@
 	--color-sea-salt: #f8f8f8;
 	--color-atomic-tangerine: #f39c6b;
 	--color-gray-30: #e7e3e080;
+	--spacing-global: 1450px;
 	--font-poppins: 'Poppins', sans-serif;
 }
 
@@ -14,6 +15,12 @@ html {
 
 button {
 	cursor: pointer;
+}
+
+.section-container {
+	height: 100vh;
+	text-align: center;
+	padding: 4rem 0;
 }
 
 .skill-icon {

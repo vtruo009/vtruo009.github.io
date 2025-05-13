@@ -1,13 +1,18 @@
 import Header from './components/Header';
+import ProjectCard from './components/ProjectCard';
 import Section from './components/Section';
 import SkillCard from './components/SkillCard';
+import { PROJECTS } from './lib/constants';
 
 const App = () => {
 	return (
 		<>
 			<Header />
-			<main className='min-h-screen bg-sea-salt'>
-				<Section sectionId='about' className='flex items-center gap-11'>
+			<main className='min-h-screen max-w-global m-auto'>
+				<Section
+					sectionId='about'
+					className='h-[663px] flex items-center gap-11 bg-gray-30 rounded-b-3xl'
+				>
 					<div className='px-12 shrink-0'>
 						<img
 							src='src/assets/images/profile.jpg'
@@ -41,22 +46,30 @@ const App = () => {
 
 				<Section
 					sectionId='skills'
-					className='text-center py-16'
+					className='section-container'
 					title='tech stack'
 					subtitle='my go to'
 				>
-					<div className='w-[50vw] mt-10 mx-auto py-16 bg-gray-30 rounded-3xl'>
+					<div className='max-w-[756px] mt-10 mx-auto py-16 bg-gray-30 rounded-3xl'>
 						<SkillCard />
 					</div>
 				</Section>
 
-				<Section sectionId='projects' className='text-center'>
-					<p className='text-lg text-gray-500'>Browse My Past</p>
-					<h2 className='text-6xl'>Projects</h2>
+				<Section
+					sectionId='projects'
+					className='section-container'
+					title='projects'
+					subtitle='browse my past'
+				>
+					<div className='flex gap-x-4'>
+						{PROJECTS.map((project) => (
+							<ProjectCard project={project} />
+						))}
+					</div>
 				</Section>
-				<p>Tentative: contact me section or a popup</p>
 			</main>
-			<p>Footer</p>
+			{/* <p>Tentative: contact me section or a popup</p> */}
+			{/* <p>Footer</p> */}
 		</>
 	);
 };

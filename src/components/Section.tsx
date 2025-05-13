@@ -14,7 +14,7 @@ const Section = ({
 	className?: string;
 }) => {
 	return (
-		<section id={sectionId} className={`h-screen px-32 ${className}`}>
+		<section id={sectionId} className={`${className}`}>
 			<p className='text-lg text-gray-500 capitalize'>{subtitle}</p>
 			<h2 className='text-6xl capitalize'>{title}</h2>
 			{children}
